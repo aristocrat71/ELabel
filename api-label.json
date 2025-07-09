@@ -1,0 +1,380 @@
+{
+  "info": {
+    "_postman_id": "1c9c6db3-966c-442a-9dbc-c1038beb80a7",
+    "name": "IMERO API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "30123544"
+  },
+  "item": [
+    {
+      "name": "Products",
+      "item": [
+        {
+          "name": "Create a product",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"companyID\": \"63ad4ddb284f1654f3639015\", // TODO update\n    \"productName\": \"Canyon Roadlite\",\n    \"gtin\": \"01234567\",\n    \"serialNo\": \"H4-H0bmA\",\n    \"type\": \"app\",\n    \"securityLevel\": \"public\",\n    \"configuredApps\": [\n        {\n            \"showInHighlihgts\": false,\n            \"isVisible\": true,\n            \"templateID\": \"63ada404a28099747eca8208\" // TODO update\n        },\n        {\n            \"showInHighlihgts\": false,\n            \"isVisible\": true,\n            \"app\": {\n                \"pageTitle\": \"Product Info\",\n                \"typeID\": 43,\n                \"isTemplate\": false,\n                \"content\": {\n                    \"productInfo\": {\n                        \"imageUrl\": \"https://images.pexels.com/photos/11987710/pexels-photo-11987710.jpeg\",\n                        \"highlightTitle\": \"string\",\n                        \"highlights\": [\n                            {\n                                \"showIcon\": true,\n                                \"title\": \"Highlight title\",\n                                \"description\": \"\u003Ch1\u003EHeadline\u003C/h1\u003E description text here\"\n                            }\n                        ],\n                        \"detailsTitle\": \"Details title\",\n                        \"details\": [\n                            {\n                                \"hexColorCode\": \"#ff9200\",\n                                \"key\": \"string\",\n                                \"value\": \"string\",\n                                \"link\": \"https://imero.de\"\n                            }\n                        ],\n                        \"descriptionTitle\": \"string\",\n                        \"description\": \"\u003Ch1\u003EHeadline\u003C/h1\u003E description text here\",\n                        \"accessoiresTitle\": \"Additional products\",\n                        \"accessoires\": [\n                            {\n                                \"text\": \"string\",\n                                \"imageURL\": \"https://images.pexels.com/photos/14686142/pexels-photo-14686142.jpeg\",\n                                \"price\": \"string\",\n                                \"link\": \"https://imero.de\"\n                            }\n                        ]\n                    },\n                    \"productInfoSectionList\": [\n                        \"details\",\n                        \"highlights\",\n                        \"description\",\n                        \"accessories\"\n                    ]\n                }\n            }\n        },\n        {\n            \"showInHighlihgts\": false,\n            \"isVisible\": true,\n            \"app\": {\n                \"pageTitle\": \"Slide Show\",\n                \"typeID\": 3,\n                \"isTemplate\": false,\n                \"content\": [\n                    {\n                        \"imageURL\": \"https://images.pexels.com/photos/12166026/pexels-photo-12166026.jpeg\",\n                        \"text\": \"\u003Cb\u003ESlide 1\u003C/b\u003E normal text\",\n                        \"isVisible\": true\n                    },\n                    {\n                        \"imageURL\": \"https://images.pexels.com/photos/5769597/pexels-photo-5769597.jpeg\",\n                        \"text\": \"\u003Cb\u003ESlide 2\u003C/b\u003E this is slide two\",\n                        \"isVisible\": true\n                    }\n                ]\n            }\n        }\n    ]\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{API_SERVER}}/products/public",
+              "host": [
+                "{{API_SERVER}}"
+              ],
+              "path": [
+                "products",
+                "public"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Update a product",
+          "request": {
+            "method": "PATCH",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"_id\": \"63b2e3b6992d1c088ffnd672\",  // TODO update\n    \"companyID\": \"63ad4ddb284fa65493639015\",    // TODO update\n    \"productName\": \"Canyon RoadLite AL 9.1\",\n    \"serialNo\": \"7H3F45245_444\",\n    \"configuredApps\": [\n        {\n            \"showInHighlihgts\": false,\n            \"isVisible\": true,\n            \"app\": {\n                \"_id\": \"63b2e3b6992d1cb88ff5d670\", // TODO update\n                \"pageTitle\": \"Product Info\",\n                \"typeID\": 43,\n                \"isTemplate\": false,\n                \"content\": {\n                    \"productInfo\": {\n                        \"imageUrl\": \"https://images.pexels.com/photos/11987710/pexels-photo-11987710.jpeg\",\n                        \"highlightTitle\": \"Product Highlights\",\n                        \"highlights\": [\n                            {\n                                \"showIcon\": true,\n                                \"title\": \"Highlight title\",\n                                \"description\": \"\u003Ch1\u003EHeadline\u003C/h1\u003E description text here\"\n                            }\n                        ],\n                        \"detailsTitle\": \"Details title\",\n                        \"details\": [\n                            {\n                                \"hexColorCode\": \"#ff9200\",\n                                \"key\": \"string\",\n                                \"value\": \"string\",\n                                \"link\": \"https://imero.de\"\n                            }\n                        ],\n                        \"descriptionTitle\": \"string\",\n                        \"description\": \"\u003Ch1\u003EHeadline\u003C/h1\u003E description text here\",\n                        \"accessoiresTitle\": \"Additional products\",\n                        \"accessoires\": [\n                            {\n                                \"text\": \"string\",\n                                \"imageURL\": \"https://images.pexels.com/photos/14686142/pexels-photo-14686142.jpeg\",\n                                \"price\": \"string\",\n                                \"link\": \"https://imero.de\"\n                            }\n                        ]\n                    },\n                    \"productInfoSectionList\": [\n                        \"details\",\n                        \"highlights\",\n                        \"description\",\n                        \"accessories\"\n                    ]\n                }\n            }\n        },\n        {\n            \"showInHighlihgts\": false,\n            \"isVisible\": true,\n            \"configuredAppID\": \"63b2ec30774n8922312076f4\"   // TODO update\n        }\n    ]\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{API_SERVER}}/products/public",
+              "host": [
+                "{{API_SERVER}}"
+              ],
+              "path": [
+                "products",
+                "public"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "E-Label",
+      "item": [
+        {
+          "name": "Ingredients",
+          "item": [
+            {
+              "name": "Get available ingredient keys",
+              "request": {
+                "auth": {
+                  "type": "noauth"
+                },
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "{{API_SERVER}}/products/public/e-label/ingredients",
+                  "host": [
+                    "{{API_SERVER}}"
+                  ],
+                  "path": [
+                    "products",
+                    "public",
+                    "e-label",
+                    "ingredients"
+                  ]
+                },
+                "description": "Returns the allowed ingredients as keys which are translated in the e-label.eu software automatically into the EU languages."
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "Recycling",
+          "item": [
+            {
+              "name": "Get recycling valid materials",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "{{API_SERVER}}/products/public/e-label/recycling",
+                  "host": [
+                    "{{API_SERVER}}"
+                  ],
+                  "path": [
+                    "products",
+                    "public",
+                    "e-label",
+                    "recycling"
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "Nutritional information",
+          "item": [
+            {
+              "name": "Calculate nutritional information",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "{{API_SERVER}}/products/public/e-label/nutrition-calculator?alcoholPercentage=12&gramResidualSugarPerLiter=6&gramAcidityPerLiter=5",
+                  "host": [
+                    "{{API_SERVER}}"
+                  ],
+                  "path": [
+                    "products",
+                    "public",
+                    "e-label",
+                    "nutrition-calculator"
+                  ],
+                  "query": [
+                    {
+                      "key": "alcoholPercentage",
+                      "value": "12"
+                    },
+                    {
+                      "key": "gramResidualSugarPerLiter",
+                      "value": "6"
+                    },
+                    {
+                      "key": "gramAcidityPerLiter",
+                      "value": "5"
+                    },
+                    {
+                      "key": "gramGlycerinPerLiter",
+                      "value": "23",
+                      "disabled": true
+                    }
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "Get one E-Label",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{API_SERVER}}/products/public?companyID=\u003CcompanyID\u003E",
+              "host": [
+                "{{API_SERVER}}"
+              ],
+              "path": [
+                "products",
+                "public"
+              ],
+              "query": [
+                {
+                  "key": "companyID",
+                  "value": "\u003CcompanyID\u003E",
+                  "description": "Must be set"
+                },
+                {
+                  "key": "pID",
+                  "value": "\u003CproductID\u003E",
+                  "description": "Optional filter",
+                  "disabled": true
+                },
+                {
+                  "key": "gtin",
+                  "value": "\u003Cgtin\u003E",
+                  "description": "Optional filter",
+                  "disabled": true
+                },
+                {
+                  "key": "serialNo",
+                  "value": "\u003CserialNo\u003E",
+                  "description": "Optional filter",
+                  "disabled": true
+                },
+                {
+                  "key": "wineID",
+                  "value": "\u003CwineID\u003E",
+                  "description": "Optional filter",
+                  "disabled": true
+                },
+                {
+                  "key": "apNumber",
+                  "value": "\u003CapNumber\u003E",
+                  "description": "Optional filter",
+                  "disabled": true
+                }
+              ]
+            },
+            "description": "With\n- properties\n- nutrition info\n- ingredients \n- text, for imprint"
+          },
+          "response": []
+        },
+        {
+          "name": "Create one E-Label",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"companyID\": \"\u003Cyour company id\u003E\", // TODO update\n    \"productName\": \"Weißburgunder\",\n    \"type\": \"e-label\",\n    \"securityLevel\": \"public\",\n    \"configuredApps\": [\n        {\n            \"app\": {\n                \"typeID\": 83,\n                \"pageTitle\": \"E-Label\",\n                \"content\": {\n                    \"blocks\": [\n                        {\n                            \"type\": \"properties\",\n                            \"content\": {\n                                \"name\": \"Scheurebe\",\n                                \"quantity\": 750,\n                                \"volume\": 11,\n                                \"year\": 2022,\n                                \"detailedDenomination\":\"\",\n                                \"country\":\"\",\n                                \"region\":\"\",\n                                \"apNumber\": {\n                                    \"isVisible\": true,\n                                    \"reference\": \"123456\"\n                                },\n                                \"lotNumber\": {\n                                    \"isVisible\": true,\n                                    \"reference\": \"654645754\"\n                                },\n                                \"wineID\": {\n                                    \"isVisible\": true,\n                                    \"reference\": \"123456\"\n                                }\n                            }\n                        },\n                        {\n                            \"type\": \"nutrition\",\n                            \"content\": {\n                                \"baseUnit\": \"100ml\",\n                                \"energy\": 123,\n                                \"carbohydrates\": 12,\n                                \"sugar\": 1,\n                                \"fat\": 0,\n                                \"saturatedFat\": 0,\n                                \"protein\": 0,\n                                \"salt\": 0\n                            }\n                        },\n                        {\n                            \"type\": \"recycling\",\n                            \"content\": {\n                                \"type\": \"manual\",\n                                \"recycling\": [\n                                    {\n                                        \"type\": \"bottle\",\n                                        \"material\": \"GL 71\"\n                                    },\n                                    {\n                                        \"type\": \"cap\",\n                                        \"material\": \"CPVC 85\",\n                                        \"mainMaterialNumber\": \"3\"\n                                    }\n                                ]\n                            }\n                        },\n                        {\n                            \"type\": \"ingredients\",\n                            \"content\": {\n                                \"ingredients\": [\n                                    \"grapes\",\n                                    \"sulfur-dioxide\",\n                                    \"argon\"\n                                ]\n                            }\n                        }\n                    ]\n                }\n            }\n        }\n    ]\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{API_SERVER}}/products/public",
+              "host": [
+                "{{API_SERVER}}"
+              ],
+              "path": [
+                "products",
+                "public"
+              ]
+            },
+            "description": "With\n- properties\n- nutrition info\n- ingredients \n- text, for imprint"
+          },
+          "response": []
+        },
+        {
+          "name": "Update an E-Label",
+          "request": {
+            "method": "PATCH",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"_id\": \"\u003Cproduct-id\u003E\", // TODO update\n    \"companyID\": \"\u003Cyour company-id\u003E\", // TODO update\n    \"productName\": \"Weißburgunder 2\",\n     \"configuredApps\": [\n        {\n            \"app\": {\n                \"_id\": \"\u003Cfeature-id\u003E\", // TODO update\n                \"typeID\": 83,\n                \"pageTitle\": \"E-Label\",\n                \"content\": {\n                    \"blocks\": [\n                        {\n                            \"type\": \"properties\",\n                            \"content\": {\n                                \"name\": \"Weißburgunder\",\n                                \"volume\": 11.4,\n                                \"quantity\": 750,\n                                \"year\": 2016,\n                                 \"lotNumber\": {\n                                    \"isVisible\": true,\n                                    \"reference\": \"11111111\"\n                                },\n                            }\n                        },\n                        {\n                            \"type\": \"nutrition\",\n                            \"content\": {\n                                \"baseUnit\": \"100ml\",\n                                \"energy\": 123,\n                                \"carbohydrates\": 12,\n                                \"sugar\": 1,\n                                \"fat\": 0,\n                                \"saturatedFat\": 0,\n                                \"protein\": 0,\n                                \"salt\": 0\n                            }\n                        },\n                        {\n                            \"type\": \"ingredients\",\n                            \"content\": {\n                                \"ingredients\": [\n                                    \"grapes\",\n                                    \"grape-must\",\n                                    \"sulfur-dioxide\",\n                                    \"carboxymethyl-cellulose\"\n                                ]\n                            }\n                        },\n                        {\n                            \"type\": \"recycling\",\n                            \"content\": {\n                                \"type\": \"manual\",\n                                \"recycling\": [\n                                    {\n                                        \"type\": \"bottle\",\n                                        \"material\": \"GL 70\"\n                                    },\n                                    {\n                                        \"type\": \"cap\",\n                                        \"material\": \"CPVC 85\",\n                                        \"mainMaterialNumber\": \"3\"\n                                    }\n                                ]\n                            }\n                        },\n                        {\n                            \"type\": \"about\",\n                            \"content\": {\n                                \"text\": {\n                                    \"i18n\": true,\n                                    \"def\": \"German text\",\n                                    \"en\": \"English text\"\n                                }\n                            }\n                        }\n                    ]\n                }\n            }\n        }\n    ]\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{API_SERVER}}/products/public",
+              "host": [
+                "{{API_SERVER}}"
+              ],
+              "path": [
+                "products",
+                "public"
+              ]
+            }
+          },
+          "response": []
+        }
+      ],
+      "event": [
+        {
+          "listen": "prerequest",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              ""
+            ]
+          }
+        },
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              ""
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Partner",
+      "item": [
+        {
+          "name": "Get product",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    //either, productID, shortID or gtin must be set \n    \"productID\":\"66e3e954c1acaa01e1207ab1\",\n    \"alternativeProductSearchFilter\": {\n        \"shortID\": \"Oj15SKT\",\n        \"gtin\":\"3760182393914\"\n    }\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://api.imero.io/facade/product-info",
+              "protocol": "https",
+              "host": [
+                "api",
+                "imero",
+                "io"
+              ],
+              "path": [
+                "facade",
+                "product-info"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    }
+  ],
+  "auth": {
+    "type": "apikey",
+    "apikey": [
+      {
+        "key": "value",
+        "value": "\u003Cyour-auth-key\u003E",
+        "type": "string"
+      },
+      {
+        "key": "key",
+        "value": "AUTH-KEY",
+        "type": "string"
+      }
+    ]
+  },
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "type": "text/javascript",
+        "exec": [
+          ""
+        ]
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "type": "text/javascript",
+        "exec": [
+          ""
+        ]
+      }
+    }
+  ],
+  "variable": [
+    {
+      "key": "API_SERVER",
+      "value": "https://api.imero.io",
+      "type": "default"
+    }
+  ]
+}
