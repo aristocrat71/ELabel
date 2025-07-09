@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     "corsheaders",
     "products",
     "accounts",
+    "elabels",
 ]
 
 MIDDLEWARE = [
