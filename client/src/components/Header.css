@@ -1,0 +1,128 @@
+.header {
+    width: 100%;
+    background: #f7faf7;
+    border-bottom: 1px solid #e0e0e0;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+  
+  .header__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem clamp(1rem, 5vw, 3rem);
+    box-sizing: border-box;
+    width: 100%;
+    flex-wrap: nowrap; /* ✅ prevent unexpected wrap on desktop */
+  }
+  
+  .header__logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #5a2d82;
+    white-space: nowrap;
+  }
+  
+  .header__menu {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    flex-wrap: nowrap;
+  }
+  
+  .header__menu li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.2s;
+  }
+  
+  .header__menu li a:hover {
+    color: #5a2d82;
+  }
+  
+  .header__actions {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    flex-wrap: nowrap;
+  }
+  
+  .header__callback,
+  .header__signup,
+  .header__signin {
+    padding: 0.4rem 1rem;
+    border-radius: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+  }
+  
+  .header__callback {
+    background: #e6f2e6;
+    color: #5a2d82;
+    border: none;
+  }
+  
+  .header__callback:hover {
+    background: #d1e7d1;
+  }
+  
+  .header__signup {
+    background: #5a2d82;
+    color: #fff;
+    border: none;
+    font-weight: 600;
+  }
+  
+  .header__signup:hover {
+    background: #432060;
+  }
+  
+  .header__signin {
+    background: transparent;
+    color: #5a2d82;
+    border: 1px solid #5a2d82;
+  }
+  
+  .header__signin:hover {
+    background: #f3eaff;
+  }
+  
+  .header__lang img {
+    width: 24px;
+    height: auto;
+    object-fit: contain;
+  }
+
+  .header__lang-flag {
+    width: 24px;
+    height: auto;
+    object-fit: contain;
+  }
+  
+  
+  
+  /* ✅ Responsive Fix */
+  @media (max-width: 900px) {
+    .header__nav {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 1rem;
+    }
+  
+    .header__menu,
+    .header__actions {
+      justify-content: flex-start;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+  
+    .header__logo {
+      align-self: flex-start;
+    }
+  }
+  

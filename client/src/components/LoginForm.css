@@ -1,0 +1,144 @@
+.login-form-container {
+    background: #fff;
+    border-radius: 0; /* Full width, so corners optional */
+    box-shadow: 0 2px 16px rgba(90,45,130,0.08);
+    padding: 2.5rem;
+    width: 100%;
+    height: 100vh; /* Full height */
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* ✅ vertically center the form */
+    box-sizing: border-box;
+  }
+  
+
+.login-form-logo-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1.2rem;
+}
+
+.login-form-logo {
+  width: 54px;
+  height: 54px;
+  object-fit: contain;
+  margin-bottom: 0.2rem;
+}
+
+.login-form-brand {
+  font-family: 'Dancing Script', cursive;
+  font-size: 2.1rem;
+  font-weight: 700;
+  color: #181818;
+  margin-bottom: 0.1rem;
+}
+
+.login-form-byline {
+  font-size: 0.95rem;
+  color: #888;
+  margin-bottom: 0.7rem;
+}
+
+.login-form-heading {
+  font-size: 1.15rem;
+  font-weight: 400;
+  color: #222;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.login-form-fields {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+
+.login-form-label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  font-size: 1rem;
+  color: #222;
+}
+
+.login-form-input {
+  padding: 0.7rem 1rem;
+  border: 1.5px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 1rem;
+  outline: none;
+  transition: border 0.18s;
+}
+
+.login-form-input:focus {
+  border-color: #5a2d82;
+}
+
+.login-form-submit {
+  width: 100%;
+  background: #5d7c5a;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 1rem 0;
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin-top: 0.7rem;
+  cursor: pointer;
+  transition: background 0.18s, color 0.18s;
+}
+
+.login-form-submit:hover {
+  background: #46603f;
+}
+
+.login-form-links {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.2rem;
+  margin-bottom: 0.2rem;
+}
+
+.login-form-link {
+  background: none;
+  border: none;
+  color: #5a2d82;
+  font-size: 1.05rem;
+  cursor: pointer;
+  text-align: left;
+  padding: 0;
+  transition: color 0.18s;
+}
+
+.login-form-link:hover {
+  color: #4f3ff0;
+  text-decoration: underline;
+}
+
+.login-form-back {
+  background: none;
+  border: none;
+  color: #888;
+  font-size: 1.05rem;
+  margin-top: 1.2rem;
+  cursor: pointer;
+  text-align: left;
+  align-self: flex-start;
+}
+
+.login-form-back:hover {
+  color: #4f3ff0;
+}
+
+@media (max-width: 900px) {
+  .login-form-container {
+    max-width: 100%;
+    margin: 1.2rem 0.5rem;
+    padding: 1.2rem 0.7rem 1rem 0.7rem;
+  }
+} 
