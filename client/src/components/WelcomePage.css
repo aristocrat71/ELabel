@@ -1,0 +1,249 @@
+.welcome-root {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #fff;
+  min-height: 100vh;
+  color: #222;
+}
+
+.welcome-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 32px 0 32px;
+  border-bottom: 1px solid #e0e0e0;
+  background: #fff;
+}
+.logo-section {
+  display: flex;
+  align-items: center;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+.logo-grape {
+  font-size: 2rem;
+  margin-right: 6px;
+}
+.logo-text {
+  font-family: 'Pacifico', cursive, sans-serif;
+  font-size: 1.5rem;
+  color: #b8005c;
+}
+.welcome-nav {
+  display: flex;
+  gap: 24px;
+  margin-left: 32px;
+}
+.nav-link {
+  color: #444;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 4px 0;
+}
+.nav-link:hover {
+  color: #b8005c;
+}
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.trial-phase {
+  color: #e74c3c;
+  font-size: 1rem;
+  border-bottom: 2px solid #e74c3c;
+  margin-right: 12px;
+}
+.company-profile-select {
+  font-size: 1rem;
+  padding: 4px 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  margin-right: 12px;
+}
+.header-icons .icon {
+  font-size: 1.2rem;
+  margin: 0 4px;
+  cursor: pointer;
+}
+
+.welcome-main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 32px 16px 0 16px;
+}
+.welcome-title {
+  font-size: 2.5rem;
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+.elabels-section h2 {
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 24px;
+}
+.elabels-cards {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 40px;
+}
+.elabel-card {
+  background: #fafbfc;
+  border: 2px solid #e0e0e0;
+  border-radius: 12px;
+  flex: 1;
+  min-width: 220px;
+  min-height: 140px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+  transition: border 0.2s;
+}
+.elabel-card.elabel-action {
+  border: 2px solid #b8005c;
+  cursor: pointer;
+}
+.elabel-card.elabel-upgrade {
+  border: 2px solid #e0e0e0;
+  cursor: pointer;
+}
+.elabel-icon {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+}
+.elabel-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+.elabel-number {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+.elabel-desc {
+  font-size: 1rem;
+  color: #888;
+}
+
+.support-section {
+  margin-top: 40px;
+}
+.support-section h2 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.support-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+.support-card {
+  background: #fff;
+  border: 2px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 18px 16px;
+  min-height: 180px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+}
+.support-feedback {
+  justify-content: flex-end;
+}
+.support-textarea {
+  width: 100%;
+  min-height: 70px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  padding: 8px;
+  resize: none;
+  margin-bottom: 12px;
+  font-size: 1rem;
+}
+.support-send-btn {
+  background: #b8005c;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 18px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-bottom: 8px;
+}
+.support-fingerprint {
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+  font-size: 2.2rem;
+}
+.support-assist-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 8px;
+}
+.support-assist-img img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.support-assist-title {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 8px;
+  text-align: center;
+}
+.support-assist-btn {
+  background: #fff;
+  color: #b8005c;
+  border: 1.5px solid #b8005c;
+  border-radius: 6px;
+  padding: 6px 18px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin: 0 auto;
+  display: block;
+}
+.support-video-icon {
+  font-size: 2rem;
+  margin-bottom: 8px;
+}
+.support-video-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+.support-video-desc {
+  font-size: 0.98rem;
+  color: #666;
+}
+.support-recommend-icon {
+  font-size: 2rem;
+  margin-bottom: 8px;
+}
+.support-recommend-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+.support-recommend-desc {
+  font-size: 0.98rem;
+  color: #666;
+}
+
+@media (max-width: 900px) {
+  .elabels-cards, .support-cards {
+    flex-direction: column;
+    display: flex;
+    gap: 16px;
+  }
+  .support-cards {
+    grid-template-columns: 1fr;
+  }
+} 
