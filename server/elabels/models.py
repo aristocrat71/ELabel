@@ -1,8 +1,11 @@
 from django.db import models
 from django.db.models import JSONField
+from companyprofiles.models import CompanyProfile
+from accounts.models import CustomUser
 
 class ELabel(models.Model):
-    # company = models.ForeignKey('your_company_model', on_delete=models.CASCADE)  # To be added later
+    company_profile = models.ForeignKey(CompanyProfile, on_delete=models.CASCADE, related_name='elabels', null=True, blank=True)
+    user = models.ForeignKey(CustomUser, on_delete=models.CASCADE, related_name='elabels', null=True, blank=True)
     name = models.CharField(max_length=255)
     image = models.ImageField(upload_to='elabels/images/', blank=True, null=True)
 
