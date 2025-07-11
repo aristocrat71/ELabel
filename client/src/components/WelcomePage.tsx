@@ -15,17 +15,14 @@ const WelcomePage: React.FC = () => {
         </nav>
         </div>
         <div className="header-right">
-          <span className="trial-phase">Trial phase</span>
           <select className="company-profile-select" defaultValue="Canspirit">
             <option value="Canspirit">Canspirit</option>
             <option value="Other">Other</option>
           </select>
           <span className="header-icons">
-            <span className="icon">📊</span>
-            <span className="icon">🎓</span>
-            <span className="icon">ℹ️</span>
-            <span className="icon">⚙️</span>
-            <span className="icon">⎋</span>
+            <span className="icon">Analytics</span>
+            <span className="icon">Settings</span>
+            <a href="/login" className="icon" style={{marginLeft: '16px'}}>Logout</a>
           </span>
         </div>
       </header>

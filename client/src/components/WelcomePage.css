@@ -61,10 +61,15 @@
   border: 1px solid #ccc;
   margin-right: 12px;
 }
+.header-icons {
+  display: flex;
+  gap: 24px;
+}
 .header-icons .icon {
   font-size: 1.2rem;
   margin: 0 4px;
   cursor: pointer;
+  justify-content: space-between;
 }
 
 .welcome-main {

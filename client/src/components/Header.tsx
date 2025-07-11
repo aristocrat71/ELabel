@@ -24,7 +24,6 @@ const Header: React.FC = () => {
           <button className="header__callback">Arrange a callback</button>
           <button className="header__signup" onClick={() => navigate('/register')}>Sign up for free</button>
           <button className="header__signin" onClick={() => navigate('/login')}>Sign in</button>
-          <img src={ukFlag} alt="English" className="header__lang-flag" />
         </div>
       </nav>
     </header>

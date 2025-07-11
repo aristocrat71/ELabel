@@ -14,7 +14,8 @@
     padding: 0.5rem clamp(1rem, 5vw, 3rem);
     box-sizing: border-box;
     width: 100%;
-    flex-wrap: nowrap; /* ✅ prevent unexpected wrap on desktop */
+    flex-wrap: nowrap;
+    background-color: rgba(255, 255, 255, 0.251);
   }
   
   .header__logo {
