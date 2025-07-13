@@ -17,7 +17,7 @@ class CompanyProfile(models.Model):
     language = models.CharField(max_length=50, blank=True, null=True)
     currency = models.CharField(max_length=10, blank=True, null=True)
     timezone = models.CharField(max_length=50, blank=True, null=True)
-    logo = models.ImageField(upload_to='companyprofiles/logos/', blank=True, null=True)
+    logo = models.URLField(blank=True, null=True)  # Store Supabase public URL
     # Add other fields as needed from your screenshot (appearance, categories, etc.)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)

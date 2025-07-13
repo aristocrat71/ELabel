@@ -7,7 +7,7 @@ class ELabel(models.Model):
     company_profile = models.ForeignKey(CompanyProfile, on_delete=models.CASCADE, related_name='elabels', null=True, blank=True)
     user = models.ForeignKey(CustomUser, on_delete=models.CASCADE, related_name='elabels', null=True, blank=True)
     name = models.CharField(max_length=255)
-    image = models.ImageField(upload_to='elabels/images/', blank=True, null=True)
+    image = models.URLField(blank=True, null=True)  # Store Supabase public URL
 
     # Optional Additional Information
     grape_variety = models.CharField(max_length=255, blank=True, null=True)

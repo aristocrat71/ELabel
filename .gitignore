@@ -1,4 +1,22 @@
-api-label.json
-venv
+# Byte-compiled / optimized / DLL files
+__pycache__
+*.py[cod]
+*$py.class
+
+# Django stuff:
+server/db.sqlite3
+server/*.sqlite3
+server/*.pyc
+server/__pycache__/
+server/*/__pycache__/
+
+# Environment variables
+server/.env
 .env
-server/media
+
+# Virtual environments
+venv/
+
+# Media and static files (optional, if you don't want to track uploads)
+server/media/
+server/staticfiles/
