@@ -38,7 +38,7 @@ class ELabel(models.Model):
     recycling_website = models.URLField(blank=True, null=True)
 
     # QR Code
-    qr_code = models.ImageField(upload_to='elabels/qrcodes/', blank=True, null=True)
+    qr_code = models.URLField(blank=True, null=True, max_length=500)
 
     # Timestamps
     created_at = models.DateTimeField(auto_now_add=True)
